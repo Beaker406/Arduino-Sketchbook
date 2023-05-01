@@ -8,15 +8,15 @@
   before making another attempt.
 
   Primary system states:
-  - Not Primed......The blue LED is illuminated to indicate the system is ready to be primed.
-                    The system is not listening for any combo button presses or logging them.
-  - Primed..........The blue LED will turn off and the system is now listening for combo buttons.
-                    If a full length combo is entered, the primed state will check if it's correct.
-                    If the timeout is reached, the system will return to an unprimed state.
-  - Correct Combo...Turn on the green LED and the accessory circuit.
-                    If the system was flashing red from a previous incorrect input, stop flashing.
-  - Incorrect Combo.Tell the system to begin flashing red on next loop.
-                    Re-prime the system for additional attemps within the timeout window.
+  - Not Primed.......The blue LED is illuminated to indicate the system is ready to be primed.
+                     The system is not listening for any combo button presses or logging them.
+  - Primed...........The blue LED will turn off and the system is now listening for combo buttons.
+                     If a full length combo is entered, the primed state will check if it's correct.
+                     If the timeout is reached, the system will return to an unprimed state.
+  - Correct Combo....Turn on the green LED and the accessory circuit.
+                     If the system was flashing red from a previous incorrect input, stop flashing.
+  - Incorrect Combo..Tell the system to begin flashing red on next loop.
+                     Re-prime the system for additional attemps within the timeout window.
 
   In addition to the primary system states, the system is always listening for the priming button
   and managing the state of the red LED. From any state, if the priming button is pressed the input
